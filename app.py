@@ -42,5 +42,5 @@ input_df = user_input_features()
 st.write(input_df)
 
 def predict(data):
-    clf = joblib.load("lmodel.pkl")
+    clf = joblib.load("model_LogR.sav")
     return clf.predict(data)
